@@ -1,0 +1,42 @@
+{
+    "name": "mosamirzz/poller",
+    "description": "A very simple way to do a Polling mechanism using PHP.",
+    "keywords": [
+        "mosamirzz",
+        "poller"
+    ],
+    "homepage": "https://github.com/mosamirzz/poller",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Mohamed Samir",
+            "email": "gm.mohamedsamir@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Mosamirzz\\Poller\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mosamirzz\\Poller\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit tests",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
